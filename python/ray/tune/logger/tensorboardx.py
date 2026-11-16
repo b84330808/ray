@@ -118,7 +118,6 @@ class TBXLoggerCallback(LoggerCallback):
                         )
 
         self._trial_result[trial] = valid_result
-        self._trial_writer[trial].flush()
 
     def log_trial_end(self, trial: "Trial", failed: bool = False):
         if trial in self._trial_writer:
